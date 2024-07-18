@@ -1,9 +1,10 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Base {
 
     public WebDriver driver;
+    public ChromeOptions chromeOptions;
     public static String browser;
     public static String AutomationName;
 
@@ -16,11 +17,10 @@ public class Base {
 
     public void launchBrowser() {
         System.out.println("Browser running is : "+browser);
-        driver = new ChromeDriver();
-        driver.get("https://flipkart.com");
+        System.out.println("Launch the browser.");
     }
 
     public void closeBrowser(){
-        driver.quit();
+        System.out.println("Close the browser.");
     }
 }
