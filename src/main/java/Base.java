@@ -17,5 +17,10 @@ public class Base {
     public void launchBrowser() {
         System.out.println("Browser running is : "+browser);
         driver = new ChromeDriver();
+        driver.get("https://flipkart.com");
+    }
+
+    public void closeBrowser(){
+        driver.quit();
     }
 }

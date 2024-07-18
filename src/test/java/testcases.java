@@ -6,6 +6,8 @@ public class testcases extends BaseTest{
     public void ValidTests(){
         System.out.println("Valid tests");
     }
+
+    @Test
     public void InvalidTest(){
         System.out.println("Invalid tests");
     }
